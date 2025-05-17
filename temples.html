@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive temple album featuring beautiful temple images">
+    <meta name="author" content="Alliana Okaikai Tenadu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h2>Temple Album</h2>
+            <button id="hamburger-menu" class="hamburger-menu">
+                <span class="hamburger-icon">&#9776;</span>
+                <span class="close-icon">&#10005;</span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h1>Temple Collection</h1>
+        
+        <div class="temple-grid">
+            <figure>
+                <img src="images/san-diego-temple.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+                <figcaption>Salt Lake City Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-temple.jpg" alt="Provo Utah Temple">
+                <figcaption>Provo Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-temple.jpg" alt="Rome Italy Temple">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/washington-dc-temple.jpg" alt="Washington D.C. Temple">
+                <figcaption>Washington D.C.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/washington-dc-temple.jpg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris-temple.jpg" alt="Paris France Temple">
+                <figcaption>Paris France</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mesa-temple.jpg" alt="Mesa Arizona Temple">
+                <figcaption>Mesa Arizona</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hong-kong-temple.jpg" alt="Hong Kong Temple">
+                <figcaption>Hong Kong</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> &#x1F338; Alliana Okaikai Tenadu &#x1F338; Ghana </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

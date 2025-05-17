@@ -1,0 +1,53 @@
+/* temples-large.css - Styles for larger screens */
+
+@media screen and (min-width: 768px) {
+    /* Header and navigation for larger screens */
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    header h2 {
+        flex: 0 0 auto;
+    }
+    
+    nav {
+        height: auto !important;
+        margin-top: 0;
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    nav ul li {
+        margin-bottom: 0;
+        margin-left: 1.5rem;
+    }
+    
+    /* Temple grid layout for larger screens */
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* For extra large screens */
+@media screen and (min-width: 1200px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    main {
+        padding: 2rem;
+    }
+}
