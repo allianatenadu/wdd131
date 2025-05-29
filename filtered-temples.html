@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Temple Picture Album</title>
+    <meta name="description" content="Interactive temple picture album with filtering capabilities">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+<body>
+    <header>
+        <h1>Enhanced Temple Picture Album</h1>
+        <nav>
+            <ul>
+                <li><button id="home">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="temple-container">
+            <!-- Temple cards will be dynamically generated here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Enhanced Temple Album</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+        <p>Created by: Your Name</p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js"></script>
+</body>
+</html>
