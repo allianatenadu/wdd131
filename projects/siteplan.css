@@ -1,0 +1,182 @@
+ /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Color Schema Variables */
+        :root {
+            --primary-color: #2C3E50;      /* Deep Blue-Gray for headings and navigation */
+            --secondary-color: #E74C3C;     /* Vibrant Red for accents and CTAs */
+            --accent-color: #F39C12;        /* Warm Orange for highlights */
+            --background-color: #ECEFF1;    /* Light gray background */
+            --text-color: #34495E;          /* Dark gray for body text */
+            --white: #FFFFFF;
+        }
+
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .section {
+            background-color: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+
+        .color-description {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        .scenario {
+            background-color: var(--background-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--accent-color);
+            font-style: italic;
+        }
+
+        .wireframe-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .wireframe {
+            background-color: #f8f8f8;
+            border: 2px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .mobile-wireframe {
+            width: 300px;
+            height: 650px;
+        }
+
+        .desktop-wireframe {
+            width: 600px;
+            height: 700px;
+        }
+
+        /* Wireframe elements */
+        .wire-element {
+            background-color: #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #999;
+        }
+
+        .wire-nav {
+            background-color: var(--primary-color);
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wire-hero {
+            background-color: var(--secondary-color);
+            color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wire-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .wire-grid-item {
+            background-color: #e0e0e0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #999;
+        }
+
+        .typography-example {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: var(--background-color);
+            border-radius: 4px;
+        }
+
+        strong {
+            color: var(--secondary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+        }
