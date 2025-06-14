@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and support local artists in your community. Browse artist profiles, view their work, and find upcoming art events and exhibitions.">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="local artists, art gallery, community art, artist spotlight, art events, exhibitions">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Local Artist Spotlight - Discover Community Artists">
+    <meta property="og:description" content="Discover and support local artists in your community. Browse artist profiles, view their work, and find upcoming art events.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/final/">
+    <meta property="og:image" content="images/hero-image.webp">
+    <meta property="og:site_name" content="Local Artist Spotlight">
+    
+    <title>Local Artist Spotlight - Discover Community Artists</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><a href="index.html">Local Artist Spotlight</a></h1>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="artists.html" class="nav-link">Artists</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Discover Amazing Local Artists</h2>
+                <p class="hero-subtitle">Support your community's creative talent and find unique artwork that tells your story</p>
+                <div class="hero-buttons">
+                    <a href="artists.html" class="btn btn-primary">Browse Artists</a>
+                    <a href="events.html" class="btn btn-secondary">Upcoming Events</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Local artist creating artwork in their studio" loading="eager">
+            </div>
+        </section>
+
+        <!-- Featured Artists Section -->
+        <section class="featured-artists" id="featured-artists">
+            <div class="container">
+                <h2 class="section-title">Featured Artists</h2>
+                <p class="section-subtitle">Meet some of our most talented community artists</p>
+                <div class="artist-grid" id="featured-artist-grid">
+                    <!-- Featured artists will be loaded dynamically -->
+                </div>
+                <div class="section-cta">
+                    <a href="artists.html" class="btn btn-outline">View All Artists</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="upcoming-events" id="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Don't miss these exciting art events in your community</p>
+                <div class="events-preview" id="events-preview">
+                    <!-- Event previews will be loaded dynamically -->
+                </div>
+                <div class="section-cta">
+                    <a href="events.html" class="btn btn-outline">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Submission Section -->
+        <section class="artist-submission" id="contact">
+            <div class="container">
+                <h2 class="section-title">Are You a Local Artist?</h2>
+                <p class="section-subtitle">Join our community and showcase your work to art lovers</p>
+                <form class="submission-form" id="artist-submission-form" method="POST" action="#" novalidate>
+                    <div class="form-group">
+                        <label for="artist-name">Full Name *</label>
+                        <input type="text" id="artist-name" name="artistName" required 
+                               aria-describedby="name-error" placeholder="Enter your full name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="artist-email">Email Address *</label>
+                        <input type="email" id="artist-email" name="email" required 
+                               aria-describedby="email-error" placeholder="your.email@example.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="artist-phone">Phone Number</label>
+                        <input type="tel" id="artist-phone" name="phone" 
+                               placeholder="(555) 123-4567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="art-medium">Primary Art Medium *</label>
+                        <select id="art-medium" name="medium" required aria-describedby="medium-error">
+                            <option value="">Select your primary medium</option>
+                            <option value="painting">Painting</option>
+                            <option value="sculpture">Sculpture</option>
+                            <option value="photography">Photography</option>
+                            <option value="digital">Digital Art</option>
+                            <option value="mixed-media">Mixed Media</option>
+                            <option value="ceramics">Ceramics</option>
+                            <option value="textiles">Textiles</option>
+                            <option value="jewelry">Jewelry</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="medium-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience-level">Experience Level *</label>
+                        <select id="experience-level" name="experience" required aria-describedby="experience-error">
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Beginner (0-2 years)</option>
+                            <option value="intermediate">Intermediate (3-5 years)</option>
+                            <option value="advanced">Advanced (6-10 years)</option>
+                            <option value="professional">Professional (10+ years)</option>
+                        </select>
+                        <span class="error-message" id="experience-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="artist-bio">Brief Bio *</label>
+                        <textarea id="artist-bio" name="bio" required aria-describedby="bio-error" 
+                                  placeholder="Tell us about yourself and your artistic journey (max 500 characters)" 
+                                  maxlength="500"></textarea>
+                        <span class="error-message" id="bio-error"></span>
+                        <span class="character-count" id="bio-count">0/500 characters</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="website-url">Website/Portfolio URL</label>
+                        <input type="url" id="website-url" name="website" 
+                               placeholder="https://yourportfolio.com">
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for art events and opportunities
+                        </label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                        </label>
+                        <span class="error-message" id="terms-error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Local Artist Spotlight</h3>
+                    <p>Supporting and showcasing local artistic talent in our community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span class="social-icon">📘</span></a>
+                        <a href="#" aria-label="Instagram"><span class="social-icon">📷</span></a>
+                        <a href="#" aria-label="Twitter"><span class="social-icon">🐦</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="artists.html">Browse Artists</a></li>
+                        <li><a href="events.html">Art Events</a></li>
+                        <li><a href="contact.hml">Submit Your Art</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@localartistspotlight.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Follow us for updates on new artists and events!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Local Artist Spotlight. Educational project for WDD 131.</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        ↑ Top
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

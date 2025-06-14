@@ -1,0 +1,333 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "medium": "painting",
+      "experience": "professional",
+      "bio": "Sarah creates vibrant abstract paintings inspired by urban landscapes and natural forms. Her work has been featured in galleries across the region.",
+      "photo": "images/sarah-chen.jpg",
+      "portfolio": [
+        "images/sarah-chen-1.jpg",
+        "images/sarah-chen-2.jpg",
+        "images/sarah-chen-3.jpg",
+        "images/sarah-chen-4.jpg"
+      ],
+      "website": "https://sarahchenart.com",
+      "email": "sarah@sarahchenart.com",
+      "phone": "(555) 123-4567",
+      "specialties": ["Abstract", "Acrylic", "Mixed Media"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": false
+      },
+      "available": true,
+      "yearsActive": 12,
+      "education": "MFA in Fine Arts, State University",
+      "awards": [
+        "Regional Artist of the Year 2023",
+        "Best Abstract Work - Downtown Gallery 2022"
+      ],
+      "exhibitions": [
+        "Solo Show - City Arts Center (2023)",
+        "Group Exhibition - Modern Expressions Gallery (2022)",
+        "Annual Art Fair - Community Center (2021-2023)"
+      ],
+      "priceRange": "$200-$2,500",
+      "featured": true,
+      "dateJoined": "2022-03-15",
+      "socialMedia": {
+        "instagram": "@sarahchenart",
+        "facebook": "SarahChenArtist"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Marcus Rodriguez",
+      "medium": "sculpture",
+      "experience": "experienced",
+      "bio": "Marcus works with reclaimed materials to create thought-provoking sculptures that address environmental and social issues. His pieces invite viewers to reconsider their relationship with waste and consumption.",
+      "photo": "images/marcus-rodriguez.jpg",
+      "portfolio": [
+        "images/marcus-rodriguez-1.jpg",
+        "images/marcus-rodriguez-2.jpg",
+        "images/marcus-rodriguez-3.jpg"
+      ],
+      "website": "https://marcusrodriguezart.com",
+      "email": "marcus@marcusrodriguezart.com",
+      "phone": "(555) 234-5678",
+      "specialties": ["Environmental Art", "Recycled Materials", "Installation"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": true
+      },
+      "available": true,
+      "yearsActive": 8,
+      "education": "BA in Sculpture, Art Institute",
+      "awards": [
+        "Sustainability in Art Award 2023",
+        "Emerging Artist Grant 2021"
+      ],
+      "exhibitions": [
+        "Eco-Art Installation - Park Gallery (2023)",
+        "Reclaimed Beauty - Environmental Art Show (2022)",
+        "New Voices in Sculpture - Metro Museum (2021)"
+      ],
+      "priceRange": "$500-$5,000",
+      "featured": false,
+      "dateJoined": "2021-09-22",
+      "socialMedia": {
+        "instagram": "@marcusrodriguezart",
+        "twitter": "@MarcusRArt"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Emily Thompson",
+      "medium": "photography",
+      "experience": "professional",
+      "bio": "Emily specializes in portrait and documentary photography, capturing authentic moments and emotions. Her work tells stories of community, family, and personal transformation.",
+      "photo": "images/emily-thompson.jpg",
+      "portfolio": [
+        "images/emily-thompson-1.jpg",
+        "images/emily-thompson-2.jpg",
+        "images/emily-thompson-3.jpg",
+        "images/emily-thompson-4.jpg",
+        "images/emily-thompson-5.jpg"
+      ],
+      "website": "https://emilythompsonphoto.com",
+      "email": "emily@emilythompsonphoto.com",
+      "phone": "(555) 345-6789",
+      "specialties": ["Portraits", "Documentary", "Black & White"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": false
+      },
+      "available": true,
+      "yearsActive": 15,
+      "education": "Professional Photography Certificate, Photography Institute",
+      "awards": [
+        "Portrait Photographer of the Year 2023",
+        "Documentary Excellence Award 2022"
+      ],
+      "exhibitions": [
+        "Faces of the Community - Cultural Center (2023)",
+        "Stories in Light - Downtown Gallery (2022)",
+        "Local Lens - Photography Collective (2021-2023)"
+      ],
+      "priceRange": "$150-$1,200",
+      "featured": true,
+      "dateJoined": "2020-11-08",
+      "socialMedia": {
+        "instagram": "@emilythompsonphoto",
+        "website": "emilythompsonphoto.com"
+      }
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "medium": "digital-art",
+      "experience": "intermediate",
+      "bio": "David creates stunning digital illustrations and concept art, blending traditional artistic techniques with modern technology. His work spans from character design to environmental art.",
+      "photo": "images/david-kim.jpg",
+      "portfolio": [
+        "images/david-kim-1.jpg",
+        "images/david-kim-2.jpg",
+        "images/david-kim-3.jpg"
+      ],
+      "website": "https://davidkimart.com",
+      "email": "david@davidkimart.com",
+      "phone": "(555) 456-7890",
+      "specialties": ["Character Design", "Concept Art", "Digital Illustration"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": false,
+        "teaching": true
+      },
+      "available": true,
+      "yearsActive": 5,
+      "education": "Digital Arts Program, Community College",
+      "awards": [
+        "Best Digital Art - Tech Arts Festival 2023"
+      ],
+      "exhibitions": [
+        "Digital Dreams - Tech Gallery (2023)",
+        "Virtual Visions - Online Exhibition (2022)"
+      ],
+      "priceRange": "$100-$800",
+      "featured": false,
+      "dateJoined": "2022-07-12",
+      "socialMedia": {
+        "instagram": "@davidkimart",
+        "artstation": "davidkim_art"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Rosa Martinez",
+      "medium": "ceramics",
+      "experience": "professional",
+      "bio": "Rosa creates functional and decorative ceramics inspired by her cultural heritage and natural forms. Her pieces combine traditional techniques with contemporary aesthetics.",
+      "photo": "images/rosa-martinez.jpg",
+      "portfolio": [
+        "images/rosa-martinez-1.jpg",
+        "images/rosa-martinez-2.jpg",
+        "images/rosa-martinez-3.jpg",
+        "images/rosa-martinez-4.jpg"
+      ],
+      "website": "https://rosamartinezceramics.com",
+      "email": "rosa@rosamartinezceramics.com",
+      "phone": "(555) 567-8901",
+      "specialties": ["Functional Pottery", "Decorative Ceramics", "Glazing"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": true
+      },
+      "available": true,
+      "yearsActive": 18,
+      "education": "MFA in Ceramics, University of Arts",
+      "awards": [
+        "Master Ceramicist Recognition 2023",
+        "Traditional Arts Excellence Award 2021"
+      ],
+      "exhibitions": [
+        "Clay & Culture - Heritage Museum (2023)",
+        "Functional Beauty - Craft Fair (2022)",
+        "Ceramic Traditions - Art Center (2021)"
+      ],
+      "priceRange": "$50-$1,500",
+      "featured": true,
+      "dateJoined": "2021-01-20",
+      "socialMedia": {
+        "instagram": "@rosamartinezceramics",
+        "facebook": "RosaMartinezCeramics"
+      }
+    },
+    {
+      "id": 6,
+      "name": "James Wilson",
+      "medium": "mixed-media",
+      "experience": "experienced",
+      "bio": "James combines painting, collage, and found objects to create layered mixed-media works that explore themes of memory, identity, and place. His art reflects the complexity of modern life.",
+      "photo": "images/james-wilson.jpg",
+      "portfolio": [
+        "images/james-wilson-1.jpg",
+        "images/james-wilson-2.jpg",
+        "images/james-wilson-3.jpg"
+      ],
+      "website": "https://jameswilsonart.com",
+      "email": "james@jameswilsonart.com",
+      "phone": "(555) 678-9012",
+      "specialties": ["Collage", "Assemblage", "Abstract Expressionism"],
+      "availability": {
+        "commissions": false,
+        "exhibitions": true,
+        "teaching": false
+      },
+      "available": false,
+      "yearsActive": 10,
+      "education": "BFA in Mixed Media, State College",
+      "awards": [
+        "Innovation in Art Award 2022"
+      ],
+      "exhibitions": [
+        "Layers of Meaning - Contemporary Gallery (2023)",
+        "Mixed Perspectives - Art Coalition (2022)",
+        "Beyond the Canvas - Alternative Space (2021)"
+      ],
+      "priceRange": "$300-$3,000",
+      "featured": false,
+      "dateJoined": "2022-05-30",
+      "socialMedia": {
+        "instagram": "@jameswilsonart"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Luna Patel",
+      "medium": "textiles",
+      "experience": "experienced",
+      "bio": "Luna weaves contemporary narratives through traditional textile techniques. Her work bridges cultural heritage with modern artistic expression, creating stunning tapestries and wearable art.",
+      "photo": "images/luna-patel.jpg",
+      "portfolio": [
+        "images/luna-patel-1.jpg",
+        "images/luna-patel-2.jpg",
+        "images/luna-patel-3.jpg",
+        "images/luna-patel-4.jpg"
+      ],
+      "website": "https://lunapatelart.com",
+      "email": "luna@lunapatelart.com",
+      "phone": "(555) 789-0123",
+      "specialties": ["Weaving", "Fiber Art", "Cultural Textiles"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": true
+      },
+      "available": true,
+      "yearsActive": 14,
+      "education": "BFA in Fiber Arts, Arts University",
+      "awards": [
+        "Cultural Heritage in Art Award 2023",
+        "Textile Innovation Grant 2022"
+      ],
+      "exhibitions": [
+        "Threads of Culture - Cultural Museum (2023)",
+        "Modern Tapestries - Textile Gallery (2022)",
+        "Heritage Weavings - Art Center (2021)"
+      ],
+      "priceRange": "$400-$3,500",
+      "featured": false,
+      "dateJoined": "2021-11-12",
+      "socialMedia": {
+        "instagram": "@lunapatelart",
+        "pinterest": "LunaPatelDesigns"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Carlos Mendoza",
+      "medium": "jewelry",
+      "experience": "professional",
+      "bio": "Carlos crafts exquisite jewelry pieces that blend precious metals with unique gemstones. His contemporary designs draw inspiration from natural forms and geometric patterns.",
+      "photo": "images/carlos-mendoza.jpg",
+      "portfolio": [
+        "images/carlos-mendoza-1.jpg",
+        "images/carlos-mendoza-2.jpg",
+        "images/carlos-mendoza-3.jpg"
+      ],
+      "website": "https://carlosmendozajewelry.com",
+      "email": "carlos@carlosmendozajewelry.com",
+      "phone": "(555) 890-1234",
+      "specialties": ["Contemporary Jewelry", "Custom Engagement Rings", "Art Jewelry"],
+      "availability": {
+        "commissions": true,
+        "exhibitions": true,
+        "teaching": false
+      },
+      "available": true,
+      "yearsActive": 11,
+      "education": "Jewelry Design Certificate, Gemological Institute",
+      "awards": [
+        "Excellence in Jewelry Design 2023",
+        "Artisan of the Year 2022"
+      ],
+      "exhibitions": [
+        "Contemporary Jewelry Show - Design Gallery (2023)",
+        "Precious Metals Exhibition - Craft Fair (2022)",
+        "Art to Wear - Fashion Museum (2021)"
+      ],
+      "priceRange": "$200-$5,000",
+      "featured": true,
+      "dateJoined": "2020-06-18",
+      "socialMedia": {
+        "instagram": "@carlosmendozajewelry",
+        "facebook": "CarlosMendozaJewelryDesign"
+      }
+    }
+  ]
+}

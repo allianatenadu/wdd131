@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Local Artist Spotlight. Contact us for artist submissions, event partnerships, general inquiries, or technical support.">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="contact, local artists, art community, submissions, partnerships, support">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - Local Artist Spotlight">
+    <meta property="og:description" content="Connect with Local Artist Spotlight for artist submissions, partnerships, and community engagement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/final/contact.html">
+    <meta property="og:image" content="images/contact-preview.webp">
+    <meta property="og:site_name" content="Local Artist Spotlight">
+    
+    <title>Contact Us - Local Artist Spotlight</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><a href="index.html">Local Artist Spotlight</a></h1>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="artists.html" class="nav-link">Artists</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We'd love to hear from you! Get in touch with questions, suggestions, or to join our artistic community</p>
+            </div>
+        </section>
+
+        <!-- Contact Methods Grid -->
+        <section class="contact-methods">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>Send us a message and we'll respond within 24 hours</p>
+                        <a href="mailto:info@localartistspotlight.com" class="contact-link">info@localartistspotlight.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our team during business hours</p>
+                        <a href="tel:+15551234567" class="contact-link">(555) 123-4567</a>
+                        <small>Mon-Fri: 9AM-6PM EST</small>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>Come see our community gallery and meet the team</p>
+                        <address class="contact-address">
+                            123 Arts District Lane<br>
+                            Creative Quarter<br>
+                            Your City, ST 12345
+                        </address>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Social Media</h3>
+                        <p>Follow us for daily updates and community highlights</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-wrapper">
+                    <div class="form-intro">
+                        <h2>Send Us a Message</h2>
+                        <p>Have a question, suggestion, or want to get involved? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form" method="POST" action="#" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="firstName" required placeholder="Your first name">
+                                <span class="error-message" id="first-name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="lastName" required placeholder="Your last name">
+                                <span class="error-message" id="last-name-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry-type">Type of Inquiry *</label>
+                            <select id="inquiry-type" name="inquiryType" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="artist-submission">Artist Submission</option>
+                                <option value="event-partnership">Event Partnership</option>
+                                <option value="media-press">Media & Press</option>
+                                <option value="general-question">General Question</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="inquiry-type-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Brief subject line" maxlength="100">
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required 
+                                      placeholder="Tell us more about your inquiry, question, or how we can help you..."
+                                      maxlength="2000"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                            <span class="character-count" id="message-count">0/2000 characters</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="how-heard">How did you hear about us?</label>
+                            <select id="how-heard" name="howHeard">
+                                <option value="">Select an option</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="word-of-mouth">Word of Mouth</option>
+                                <option value="local-event">Local Event</option>
+                                <option value="news-article">News Article</option>
+                                <option value="artist-referral">Artist Referral</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I'd like to receive updates about new artists, events, and community news
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy-policy" name="privacyPolicy" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" target="_blank">Privacy Policy</a> and understand how my data will be used *
+                            </label>
+                            <span class="error-message" id="privacy-policy-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">How do I submit my artwork for consideration?</h3>
+                        <div class="faq-answer">
+                            <p>You can submit your artwork through our <a href="index.html">artist submission form</a> on the homepage. We review all submissions and will contact you within 2-3 business days if your work is selected for our platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is there a fee to be featured as an artist?</h3>
+                        <div class="faq-answer">
+                            <p>No, Local Artist Spotlight is completely free for artists. We believe in supporting our creative community without financial barriers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How can I promote my event on your platform?</h3>
+                        <div class="faq-answer">
+                            <p>Use our <a href="events.html">event submission form</a> to share details about your art-related event. We feature exhibitions, workshops, gallery openings, and community art events.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I purchase artwork directly through your site?</h3>
+                        <div class="faq-answer">
+                            <p>While we don't handle transactions directly, each artist profile includes contact information so you can connect with them about purchasing their work or commissioning pieces.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">How often do you update the artist and event listings?</h3>
+                        <div class="faq-answer">
+                            <p>We review and update our listings weekly, with new artists and events added regularly. Follow us on social media for the most current updates!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer partnership opportunities for businesses?</h3>
+                        <div class="faq-answer">
+                            <p>Yes! We welcome partnerships with local businesses, galleries, and art organizations. Please use the contact form above and select "Collaboration Opportunity" to discuss partnership possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location/Hours Section -->
+        <section class="location-hours">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info">
+                        <h2>Visit Our Gallery</h2>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <strong>Address:</strong>
+                                <address>
+                                    Local Artist Spotlight Gallery<br>
+                                    123 Arts District Lane<br>
+                                    Creative Quarter<br>
+                                    Your City, ST 12345
+                                </address>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <strong>Gallery Hours:</strong>
+                                <ul class="hours-list">
+                                    <li>Monday - Friday: 10:00 AM - 7:00 PM</li>
+                                    <li>Saturday: 9:00 AM - 8:00 PM</li>
+                                    <li>Sunday: 11:00 AM - 6:00 PM</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <strong>Office Hours:</strong>
+                                <ul class="hours-list">
+                                    <li>Monday - Friday: 9:00 AM - 6:00 PM EST</li>
+                                    <li>Phone and email support available</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <strong>Parking:</strong>
+                                <p>Free parking available in the Arts District garage. Validated parking for gallery visitors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <div class="map-container">
+                            <div class="map-overlay">
+                                <h3>Interactive Map</h3>
+                                <p>Visit us in the heart of the Arts District</p>
+                                <button class="btn btn-outline" onclick="openMap()">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Message (Hidden by default) -->
+        <div class="success-message" id="success-message" style="display: none;">
+            <div class="success-content">
+                <div class="success-icon">✓</div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                <button class="btn btn-primary" onclick="closeSuccessMessage()">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        ↑ Top
+    </button>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Local Artist Spotlight</h3>
+                    <p>Supporting and showcasing local artistic talent in our community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><span class="social-icon">📘</span></a>
+                        <a href="#" aria-label="Instagram"><span class="social-icon">📷</span></a>
+                        <a href="#" aria-label="Twitter"><span class="social-icon">🐦</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="artists.html">Browse Artists</a></li>
+                        <li><a href="events.html">Art Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@localartistspotlight.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Follow us for updates on new artists and events!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Local Artist Spotlight. Educational project for WDD 131.</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/contact.js"></script>
+    <script>
+        // Basic contact form functionality
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const requiredFields = ['first-name', 'last-name', 'email', 'inquiry-type', 'subject', 'message', 'privacy-policy'];
+            let isValid = true;
+            
+            requiredFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                const errorElement = document.getElementById(fieldId + '-error');
+                
+                if (!field.value.trim() || (field.type === 'checkbox' && !field.checked)) {
+                    errorElement.textContent = 'This field is required';
+                    isValid = false;
+                } else {
+                    errorElement.textContent = '';
+                }
+            });
+            
+            // Email validation
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('email-error');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (email.value && !emailRegex.test(email.value)) {
+                emailError.textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Show success message
+                document.getElementById('success-message').style.display = 'flex';
+                this.reset();
+                
+                // Update character count
+                document.getElementById('message-count').textContent = '0/2000 characters';
+            }
+        });
+        
+        // Character counter for message field
+        document.getElementById('message').addEventListener('input', function() {
+            const count = this.value.length;
+            document.getElementById('message-count').textContent = `${count}/2000 characters`;
+        });
+        
+        // Close success message
+        function closeSuccessMessage() {
+            document.getElementById('success-message').style.display = 'none';
+        }
+        
+        // Open map (placeholder function)
+        function openMap() {
+            window.open('https://maps.google.com/?q=123+Arts+District+Lane+Creative+Quarter', '_blank');
+        }
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = '0';
+                }
+            });
+        });
+        
+        // Set current year and last modified date
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            document.getElementById('last-modified').textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>
